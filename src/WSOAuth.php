@@ -16,6 +16,7 @@
 
 use AuthenticationProvider\FacebookAuth;
 use AuthenticationProvider\MediaWikiAuth;
+use AuthenticationProvider\NextcloudAuth;
 use Exception\InvalidAuthProviderClassException;
 use Exception\UnknownAuthProviderException;
 
@@ -26,6 +27,7 @@ class WSOAuth extends AuthProviderFramework
 {
     const DEFAULT_AUTH_PROVIDERS = [
         "mediawiki" => MediaWikiAuth::class,
+        "nextcloud" => NextcloudAuth::class,
         "facebook" => FacebookAuth::class
     ];
 
